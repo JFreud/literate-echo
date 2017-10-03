@@ -10,7 +10,7 @@ def root():
 
 @echo_app.route("/response/", methods = ["POST"])
 def response():
-    print request.form
+    #print request.form
     return render_template("response.html", osis = request.form["username"], requester = request.method)
 
 
